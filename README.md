@@ -1,2 +1,1 @@
-# Test_Automation_School
-Tasks and Jobs in TAS
+I am a Quality Assurance and Software Tester, passionate about my carreer. I switched from being a Scientific Officer to Software testing and currently I am into Automation training.
