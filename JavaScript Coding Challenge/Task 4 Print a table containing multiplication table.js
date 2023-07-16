@@ -1,0 +1,11 @@
+// program to generate a multiplication table
+
+const number = parseInt(prompt('10 '));
+
+for(let i = 1; i <= 10; i++) {
+
+    const result = i * number;
+
+   
+    console.log(`${number} * ${i} = ${result}`);
+}
