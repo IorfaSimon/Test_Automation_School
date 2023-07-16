@@ -1,0 +1,3 @@
+const friendsArray = ['Ephraim', 'Moses', 'Nico', 'Philip', 'Emmy']
+
+console.log(friendsArray)
