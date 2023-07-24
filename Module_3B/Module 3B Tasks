@@ -1,0 +1,254 @@
+{
+	"info": {
+		"_postman_id": "0859c4a9-23ee-4c84-ada0-18bd2b06f1c8",
+		"name": "Module 3B Tasks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25856506"
+	},
+	"item": [
+		{
+			"name": "Task 3",
+			"item": [
+				{
+					"name": "Task 3",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Status code name has string\", function () {\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"console.log(jsonData)\r",
+									"console.log(jsonData.swagger)\r",
+									"console.log(jsonData.info)\r",
+									"console.log(jsonData.host)\r",
+									"console.log(jsonData.tag)\r",
+									"console.log(jsonData.tags[1].name)\r",
+									"console.log(jsonData.tags[2].description)\r",
+									"console.log(jsonData.paths)\r",
+									"console.log(jsonData.basepaths)\r",
+									"\r",
+									"\r",
+									"pm.test(\"confirm swagger is 2.0\", function () {\r",
+									"    pm.expect(jsonData.swagger).to.eql(\"2.0\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"confirm host is petstore.swagger.io\", function () {\r",
+									"    pm.expect(jsonData.swagger).to.eql(\"2.0\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"confirm name is store\", function () {\r",
+									"    pm.expect(jsonData.swagger).to.eql(\"2.0\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"confirm scheme is json\", function () {\r",
+									"    pm.expect(jsonData.swagger).to.eql(\"2.0\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"confirm that tags[1].name is pet\", function () {\r",
+									"    pm.expect(jsonData.swagger).to.eql(\"2.0\");\r",
+									"});\r",
+									"\r",
+									"console.log(jsonData.schemes)\r",
+									"pm.environment.set(\"entityschemes\",jsonData.schemes);\r",
+									"\r",
+									"console.log(jsonData.tags[1].name)\r",
+									"pm.environment.set(\"entitytags[1].name\",jsonData.tags[1].name);\r",
+									"\r",
+									"console.log(jsonData.name)\r",
+									"pm.environment.set(\"entityname\",jsonData.name);\r",
+									"\r",
+									"console.log(jsonData.host)\r",
+									"pm.environment.set(\"entityhost\",jsonData.host);\r",
+									"\r",
+									"console.log(jsonData.swagger)\r",
+									"pm.environment.set(\"entityswagger\",jsonData.swagger);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/swagger.json",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"swagger.json"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Task 2",
+			"item": [
+				{
+					"name": "GET Request Task 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code should be 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://restapi.adequateshop.com/api/Tourist/253610",
+							"protocol": "http",
+							"host": [
+								"restapi",
+								"adequateshop",
+								"com"
+							],
+							"path": [
+								"api",
+								"Tourist",
+								"253610"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Request Task 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf(201);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tourist_name\": \"nder\",\r\n    \"tourist_email\": \"nderdoo_2012@yaoo.com\",\r\n    \"tourist_location\": \"abuja\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://restapi.adequateshop.com/api/Tourist",
+							"protocol": "http",
+							"host": [
+								"restapi",
+								"adequateshop",
+								"com"
+							],
+							"path": [
+								"api",
+								"Tourist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Request Task 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Succefull DELETE request\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://restapi.adequateshop.com/api/?tourist_name=simon&tourist_location=abuja&tourist_email=nderdoo_2012@yaoo.com",
+							"protocol": "http",
+							"host": [
+								"restapi",
+								"adequateshop",
+								"com"
+							],
+							"path": [
+								"api",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "253620",
+									"disabled": true
+								},
+								{
+									"key": "tourist_name",
+									"value": "simon"
+								},
+								{
+									"key": "tourist_location",
+									"value": "abuja"
+								},
+								{
+									"key": "tourist_email",
+									"value": "nderdoo_2012@yaoo.com"
+								},
+								{
+									"key": "tourist_location",
+									"value": "abuja",
+									"disabled": true
+								},
+								{
+									"key": "createdat",
+									"value": "2023-07-24T01:08:11.9965424",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
