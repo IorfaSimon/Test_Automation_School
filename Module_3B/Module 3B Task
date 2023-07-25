@@ -22,55 +22,23 @@
 									"\r",
 									"pm.test(\"Status code name has string\", function () {\r",
 									"    pm.response.to.have.status(\"OK\");\r",
-									"});\r",
+									"})\r",
 									"\r",
+									"pm.test(\"Test to verify the id number of a non-fiction book with the name 'Untamed'\" )\r",
+									"const response = pm.response.json();\r",
+									"console.log(response);\r",
 									"\r",
-									"var jsonData = pm.response.json();\r",
-									"console.log(jsonData)\r",
-									"console.log(jsonData.swagger)\r",
-									"console.log(jsonData.info)\r",
-									"console.log(jsonData.host)\r",
-									"console.log(jsonData.tag)\r",
-									"console.log(jsonData.tags[1].name)\r",
-									"console.log(jsonData.tags[2].description)\r",
-									"console.log(jsonData.paths)\r",
-									"console.log(jsonData.basepaths)\r",
+									"const books =pm.response.json();\r",
 									"\r",
+									"const booksFound=true;\r",
 									"\r",
-									"pm.test(\"confirm swagger is 2.0\", function () {\r",
-									"    pm.expect(jsonData.swagger).to.eql(\"2.0\");\r",
-									"});\r",
-									"\r",
-									"pm.test(\"confirm host is petstore.swagger.io\", function () {\r",
-									"    pm.expect(jsonData.swagger).to.eql(\"2.0\");\r",
-									"});\r",
-									"\r",
-									"pm.test(\"confirm name is store\", function () {\r",
-									"    pm.expect(jsonData.swagger).to.eql(\"2.0\");\r",
-									"});\r",
-									"\r",
-									"pm.test(\"confirm scheme is json\", function () {\r",
-									"    pm.expect(jsonData.swagger).to.eql(\"2.0\");\r",
-									"});\r",
-									"\r",
-									"pm.test(\"confirm that tags[1].name is pet\", function () {\r",
-									"    pm.expect(jsonData.swagger).to.eql(\"2.0\");\r",
-									"});\r",
-									"\r",
-									"console.log(jsonData.schemes)\r",
-									"pm.environment.set(\"entityschemes\",jsonData.schemes);\r",
-									"\r",
-									"console.log(jsonData.tags[1].name)\r",
-									"pm.environment.set(\"entitytags[1].name\",jsonData.tags[1].name);\r",
-									"\r",
-									"console.log(jsonData.name)\r",
-									"pm.environment.set(\"entityname\",jsonData.name);\r",
-									"\r",
-									"console.log(jsonData.host)\r",
-									"pm.environment.set(\"entityhost\",jsonData.host);\r",
-									"\r",
-									"console.log(jsonData.swagger)\r",
-									"pm.environment.set(\"entityswagger\",jsonData.swagger);"
+									"for(let i=0; i<=books.length; i++){\r",
+									"    const book=book[i]\r",
+									"    if(bookname===\"Untamed\" && book.type ===\"nonFictnonBook\"){\r",
+									"    pm.response(book.id).to.be.a(\"number\")\r",
+									"    booksFound=true\r",
+									"    console.log(book.id)\r",
+									"    }}"
 								],
 								"type": "text/javascript"
 							}
@@ -80,12 +48,45 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{BaseUrl}}/swagger.json",
+							"raw": "{{baseUrl}}/status",
 							"host": [
-								"{{BaseUrl}}"
+								"{{baseUrl}}"
 							],
 							"path": [
-								"swagger.json"
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{baseUrl}}/books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/books?type=non-fiction",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "untamed",
+									"disabled": true
+								},
+								{
+									"key": "type",
+									"value": "non-fiction"
+								},
+								{
+									"key": "id",
+									"value": "5",
+									"disabled": true
+								}
 							]
 						}
 					},
@@ -117,7 +118,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://restapi.adequateshop.com/api/Tourist/253610",
+							"raw": "http://restapi.adequateshop.com/api/Tourist",
 							"protocol": "http",
 							"host": [
 								"restapi",
@@ -126,8 +127,7 @@
 							],
 							"path": [
 								"api",
-								"Tourist",
-								"253610"
+								"Tourist"
 							]
 						}
 					},
