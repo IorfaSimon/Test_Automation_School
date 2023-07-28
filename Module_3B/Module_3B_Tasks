@@ -48,12 +48,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{baseUrl}}/status",
+							"raw": "https://simplebook",
+							"protocol": "https",
 							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"status"
+								"simplebook"
 							]
 						}
 					},
@@ -249,6 +247,152 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Task 4",
+			"item": [
+				{
+					"name": "Status Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}status",
+							"host": [
+								"{{baseUrl}}status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Books Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}books?type=fiction&limit=4",
+							"host": [
+								"{{baseUrl}}books"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "fiction"
+								},
+								{
+									"key": "limit",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order book Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bookId\": 1,\r\n    \"customerName\": \"{{$randomFullName}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://simple-books-api.glitch.me/orders",
+							"protocol": "https",
+							"host": [
+								"simple-books-api",
+								"glitch",
+								"me"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register API client",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clientName\": \"Simon\",\r\n    \"clientEmail\": \"simoniorfa@gmail.com\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}api-Clients",
+							"host": [
+								"{{baseUrl}}api-Clients"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://simple-books-api.glitch.me",
+			"type": "string"
+		},
+		{
+			"key": "BaseUrl",
+			"value": "https://simple-books-api.glitch.me",
+			"type": "string"
+		},
+		{
+			"key": "Access Token",
+			"value": "8e2986e0682c71ddd0845e3b95d97926c7e66a4e1a1f6f43284fa1a7109fd192",
+			"type": "string"
+		},
+		{
+			"key": "access Token",
+			"value": "8e2986e0682c71ddd0845e3b95d97926c7e66a4e1a1f6f43284fa1a7109fd192"
 		}
 	]
 }
