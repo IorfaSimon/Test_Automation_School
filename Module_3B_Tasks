@@ -1,0 +1,442 @@
+{
+	"info": {
+		"_postman_id": "0859c4a9-23ee-4c84-ada0-18bd2b06f1c8",
+		"name": "Module_3B_Tasks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25856506"
+	},
+	"item": [
+		{
+			"name": "Task 3",
+			"item": [
+				{
+					"name": "Task 3",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Status code name has string\", function () {\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Test to verify the id number of a non-fiction book with the name 'Untamed'\" )\r",
+									"const response = pm.response.json();\r",
+									"console.log(response);\r",
+									"\r",
+									"const books =pm.response.json();\r",
+									"\r",
+									"const booksFound=true;\r",
+									"\r",
+									"for(let i=0; i<=books.length; i++){\r",
+									"    const book=book[i]\r",
+									"    if(bookname===\"Untamed\" && book.type ===\"nonFictnonBook\"){\r",
+									"    pm.response(book.id).to.be.a(\"number\")\r",
+									"    booksFound=true\r",
+									"    console.log(book.id)\r",
+									"    }}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://simple-books-api.glitch.me",
+							"protocol": "https",
+							"host": [
+								"simple-books-api",
+								"glitch",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{baseUrl}}/books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/books?type=non-fiction",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "untamed",
+									"disabled": true
+								},
+								{
+									"key": "type",
+									"value": "non-fiction"
+								},
+								{
+									"key": "id",
+									"value": "5",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Task 2",
+			"item": [
+				{
+					"name": "GET Request Task 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code should be 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://restapi.adequateshop.com/api/Tourist",
+							"protocol": "http",
+							"host": [
+								"restapi",
+								"adequateshop",
+								"com"
+							],
+							"path": [
+								"api",
+								"Tourist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Request Task 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf(201);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tourist_name\": \"nder\",\r\n    \"tourist_email\": \"siorfa_78@omail.com\",\r\n    \"tourist_location\": \"abuja\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://restapi.adequateshop.com/api/Tourist",
+							"protocol": "http",
+							"host": [
+								"restapi",
+								"adequateshop",
+								"com"
+							],
+							"path": [
+								"api",
+								"Tourist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Request Task 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Succefull DELETE request\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"tourist_name\": \"nder\",\r\n    \"tourist_email\": \"simoniorfa_78@omail.com\",\r\n    \"tourist_location\": \"abuja\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://restapi.adequateshop.com/api/?tourist_name=simon&tourist_location=abuja&tourist_email=nderdoo_2012@yaoo.com",
+							"protocol": "http",
+							"host": [
+								"restapi",
+								"adequateshop",
+								"com"
+							],
+							"path": [
+								"api",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "253620",
+									"disabled": true
+								},
+								{
+									"key": "tourist_name",
+									"value": "simon"
+								},
+								{
+									"key": "tourist_location",
+									"value": "abuja"
+								},
+								{
+									"key": "tourist_email",
+									"value": "nderdoo_2012@yaoo.com"
+								},
+								{
+									"key": "tourist_location",
+									"value": "abuja",
+									"disabled": true
+								},
+								{
+									"key": "createdat",
+									"value": "2023-07-24T01:08:11.9965424",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Task 4",
+			"item": [
+				{
+					"name": "Status Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/status",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Books Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/books?type=fiction&limit=4",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "fiction"
+								},
+								{
+									"key": "limit",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order book Request",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf(201);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bookId\": 1,\r\n    \"customerName\": \"{{$randomFullName}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/orders",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register API client",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf(201);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clientName\": \"Simon\",\r\n    \"clientEmail\": \"simoniorfa@gmail.com\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api-Clients",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api-Clients"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://simple-books-api.glitch.me",
+			"type": "string"
+		},
+		{
+			"key": "BaseUrl",
+			"value": "https://simple-books-api.glitch.me",
+			"type": "string"
+		},
+		{
+			"key": "Access Token",
+			"value": "8e2986e0682c71ddd0845e3b95d97926c7e66a4e1a1f6f43284fa1a7109fd192",
+			"type": "string"
+		},
+		{
+			"key": "access Token",
+			"value": "8e2986e0682c71ddd0845e3b95d97926c7e66a4e1a1f6f43284fa1a7109fd192"
+		}
+	]
+}
