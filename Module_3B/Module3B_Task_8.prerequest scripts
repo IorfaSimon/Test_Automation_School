@@ -1,0 +1,115 @@
+{
+	"id": "14a8e44c-e511-40a0-8c86-ce3974497be5",
+	"name": "Module3B_Task_7",
+	"timestamp": "2023-08-06T13:37:11.152Z",
+	"collection_id": "25856506-1a2b0339-395a-4564-940c-d3d118b7895b",
+	"folder_id": 0,
+	"environment_id": "25856506-22b738f9-0bdd-4626-ae97-6f1e2da00914",
+	"totalPass": 2,
+	"delay": "200",
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-08-06T13:37:07.175Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "979d2a3d-5830-426d-82e3-cacb03e4cdbc",
+			"name": "Todos",
+			"url": "https://jsonplaceholder.typicode.com/todos",
+			"time": 725,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				725
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "4cb5ae81-d128-4899-8647-f5e772aafb29",
+			"name": "DELETE",
+			"url": "https://jsonplaceholder.typicode.com/delete?userId=7",
+			"time": 386,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"successful DELETE": false
+			},
+			"testPassFailCounts": {
+				"successful DELETE": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				386
+			],
+			"allTests": [
+				{
+					"successful DELETE": false
+				}
+			]
+		},
+		{
+			"id": "c554ef1d-90a9-44e2-a449-e09273228ad7",
+			"name": "posts",
+			"url": "https://jsonplaceholder.typicode.com/posts?id=101",
+			"time": 393,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				393
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1504,
+	"collection": {
+		"requests": [
+			{
+				"id": "979d2a3d-5830-426d-82e3-cacb03e4cdbc",
+				"method": "GET"
+			},
+			{
+				"id": "4cb5ae81-d128-4899-8647-f5e772aafb29",
+				"method": "DELETE"
+			},
+			{
+				"id": "c554ef1d-90a9-44e2-a449-e09273228ad7",
+				"method": "POST"
+			}
+		]
+	}
+}
