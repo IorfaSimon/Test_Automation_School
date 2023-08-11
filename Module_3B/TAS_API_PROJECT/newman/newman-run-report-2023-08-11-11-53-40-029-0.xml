@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Sendinblue" tests="156" time="52.312">
+  <testsuite name="Sales CRM / Companies / Get all Companies" id="5047fc82-0256-4941-b4e4-b01d2a2cb5fa" timestamp="2023-08-11T11:52:29.742Z" tests="3" failures="0" errors="0" time="6.013">
+    <testcase name="Body matches string" time="6.013" classname="Sendinblue"/>
+    <testcase name="Get all Companies" time="6.013" classname="Sendinblue"/>
+    <testcase name="keep-alive" time="6.013" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Create a company" id="c79239fb-92ef-4b45-a073-c5c66c66c211" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="1" errors="0" time="0.306">
+    <testcase name="Status code is not 200" time="0.306" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 401">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Companies / Create a company.]]>
+        <![CDATA[Test description: Status code is not 200.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 401
+   at Object.eval sandbox-script.js:1:2).]]>
+      </failure>
+    </testcase>
+    <testcase name="Body matches string" time="0.306" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Get company attributes" id="43df3844-e0f4-40aa-a34a-af506bb88afa" timestamp="2023-08-11T11:52:29.742Z" tests="3" failures="0" errors="0" time="0.286">
+    <testcase name="Body matches string" time="0.286" classname="Sendinblue"/>
+    <testcase name="Get all Companies" time="0.286" classname="Sendinblue"/>
+    <testcase name="keep-alive" time="0.286" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Link and Unlink company with contact and deal" id="87bf446d-540b-468f-bba8-06c165cbd582" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.297"/>
+  <testsuite name="Sales CRM / Companies / Get a company" id="caa2ea11-e88f-462b-8f24-af35150f3040" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.241">
+    <testcase name="Body matches string" time="0.241" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.241" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Delete a company" id="05c1f70f-bc7a-49bc-9262-3e186cc195ff" timestamp="2023-08-11T11:52:29.742Z" tests="1" failures="1" errors="0" time="0.262">
+    <testcase name="Successful DELETE" time="0.262" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status reason '204' but got 'Unauthorized'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Companies / Delete a company.]]>
+        <![CDATA[Test description: Successful DELETE.]]>
+        <![CDATA[Error message: expected response to have status reason '204' but got 'Unauthorized'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason '204' but got 'Unauthorized'
+   at Object.eval sandbox-script.js:1:6).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Update a company" id="4cc785d3-5310-42d5-812c-a3d789ffcca7" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.384"/>
+  <testsuite name="Sales CRM / Companies / Get pipeline stages" id="1953ac79-f001-4677-b211-d70cda854afd" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="1" errors="0" time="0.261">
+    <testcase name="Body matches string" time="0.261" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Companies / Get pipeline stages.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'
+   at Object.eval sandbox-script.js:1:8).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.261" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Get all deals" id="5ff55fe6-815e-41c0-9d74-088909ac8426" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="1" errors="0" time="0.303">
+    <testcase name="Body matches string" time="0.303" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Deals / Get all deals.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'
+   at Object.eval sandbox-script.js:1:9).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.303" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Create a deal" id="c852771a-bb0f-4359-bf90-af44cddd52c2" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.264">
+    <testcase name="Your test name" time="0.264" classname="Sendinblue"/>
+    <testcase name="Body matches string" time="0.264" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Link and Unlink a deal with contacts and companies" id="07871e00-dec6-4232-9fc1-1e1abbd628ad" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.247"/>
+  <testsuite name="Sales CRM / Deals / Get deal attributes" id="3982e828-46c3-4163-a5bc-81371cd71672" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="1" errors="0" time="0.265">
+    <testcase name="Body matches string" time="0.265" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n' to include 'type'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Deals / Get deal attributes.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'type'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'type'
+   at Object.eval sandbox-script.js:1:12).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.265" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Get a deal" id="b6e764d2-0d08-4f0b-9a76-7c91cef9546a" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.286">
+    <testcase name="Body matches string" time="0.286" classname="Sendinblue"/>
+    <testcase name="Content-Type" time="0.286" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Delete a deal" id="e1f449f9-66a7-49af-95c4-f493d333f52a" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.266"/>
+  <testsuite name="Sales CRM / Deals / Update a deal" id="35b7ea2e-052e-42aa-82d4-31b19687053e" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.293"/>
+  <testsuite name="Sales CRM / Tasks / Get all tasks" id="b1449824-4e76-47fe-87e2-dd47fb412020" timestamp="2023-08-11T11:52:29.742Z" tests="4" failures="1" errors="0" time="0.318">
+    <testcase name="Body matches string" time="0.318" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.318" classname="Sendinblue"/>
+    <testcase name="Body is correct" time="0.318" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response body to equal 'string' but got '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Tasks / Get all tasks.]]>
+        <![CDATA[Test description: Body is correct.]]>
+        <![CDATA[Error message: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'
+   at Object.eval sandbox-script.js:3:16).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is not less than 200ms" time="0.318" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Create a task" id="b1fca71f-ff53-4516-9f64-80cfbd1d27d9" timestamp="2023-08-11T11:52:29.742Z" tests="1" failures="0" errors="0" time="0.277">
+    <testcase name="application/json" time="0.277" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Get all task types" id="e741a576-b005-4512-8037-e9ad2739c6c0" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="1" errors="0" time="0.297">
+    <testcase name="Body matches string" time="0.297" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n' to include 'title'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Tasks / Get all task types.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'title'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'title'
+   at Object.eval sandbox-script.js:1:18).]]>
+      </failure>
+    </testcase>
+    <testcase name="application/json" time="0.297" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Get a task" id="5a5f7b15-ab7e-44f3-b409-0f0322394c21" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.297">
+    <testcase name="Body matches string" time="0.297" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.297" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Delete a task" id="1dd84954-47ea-499b-b680-67019e522f17" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="1" errors="0" time="0.236">
+    <testcase name="Successful DELETE" time="0.236" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status code 204 but got 401">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Tasks / Delete a task.]]>
+        <![CDATA[Test description: Successful DELETE.]]>
+        <![CDATA[Error message: expected response to have status code 204 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 204 but got 401
+   at Object.eval sandbox-script.js:1:20).]]>
+      </failure>
+    </testcase>
+    <testcase name="Body matches string" time="0.236" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Update a task" id="3bd3e94d-3d40-47cf-9984-0070491e301e" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.272"/>
+  <testsuite name="Sales CRM / Notes / Get all notes" id="16f09f9e-3e38-427a-a7ab-b9ad66c81ebb" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.296">
+    <testcase name="Body matches string" time="0.296" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.296" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Notes / Create a note" id="cd2a0bd9-582d-4bbb-b6ff-293cc1778052" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.275">
+    <testcase name="application/json" time="0.275" classname="Sendinblue"/>
+    <testcase name="Body matches string" time="0.275" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Notes / Get a note" id="33f76d4f-7c72-4c8a-9a5c-bc58542cdbb4" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.308">
+    <testcase name="Body matches string" time="0.308" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.308" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Notes / Update a note" id="c19a630f-4f17-48b5-b175-05c5f3e4638a" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.256"/>
+  <testsuite name="Sales CRM / Notes / Delete a note" id="18039295-8521-44fa-a373-cf261d4ef58e" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.269">
+    <testcase name="Body matches string" time="0.269" classname="Sendinblue"/>
+    <testcase name="application json" time="0.269" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Files / Get all files" id="af361a24-8464-4eb1-82dc-0ef5be456765" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.310">
+    <testcase name="Body matches string" time="0.310" classname="Sendinblue"/>
+    <testcase name="appapplication/json" time="0.310" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Files / Upload a file" id="cdcd084f-59a2-4bfb-bc37-13523ac09032" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.277">
+    <testcase name="application/json" time="0.277" classname="Sendinblue"/>
+    <testcase name="Body matches string" time="0.277" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Files / Download a file" id="763b7db1-e022-496d-81d0-1150d094748e" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.285"/>
+  <testsuite name="Sales CRM / Files / Delete a file" id="4c74e400-3a47-4151-a23c-a564c30cc27d" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.268"/>
+  <testsuite name="Sales CRM / Files / Get file details" id="c9e3294e-9135-4769-a9dd-83e5f3c42276" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="1" errors="0" time="0.332">
+    <testcase name="application/json" time="0.332" classname="Sendinblue"/>
+    <testcase name="Response time is less than 200ms" time="0.332" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected 332 to be below 200">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Files / Get file details.]]>
+        <![CDATA[Test description: Response time is less than 200ms.]]>
+        <![CDATA[Error message: expected 332 to be below 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 332 to be below 200
+   at Object.eval sandbox-script.js:2:31).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Get an email campaign report" id="bae97902-f9ab-4ce7-af42-dde568bc1b6f" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.303">
+    <testcase name="Body matches string" time="0.303" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.303" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Update an email campaign" id="42af01e9-3feb-4def-9405-ae5b6ebb3d1f" timestamp="2023-08-11T11:52:29.742Z" tests="1" failures="0" errors="0" time="0.267">
+    <testcase name="application/json" time="0.267" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Delete an email campaign" id="3c221490-af5c-4a64-987d-d37b8e854594" timestamp="2023-08-11T11:52:29.742Z" tests="1" failures="0" errors="0" time="0.278">
+    <testcase name="Body matches string" time="0.278" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Send an email campaign immediately, based on campaignId" id="427088c7-ea9c-40ab-ac18-0d9c0915794f" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.251">
+    <testcase name="Body matches string" time="0.251" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.251" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Send an email campaign to your test list" id="57f67461-66dd-4575-b607-794623bc0f31" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.252">
+    <testcase name="Body matches string" time="0.252" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.252" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Update an email campaign status" id="feb3af93-2386-4283-9fb0-506710b494c6" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.237">
+    <testcase name="Body matches string" time="0.237" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.237" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Send the report of a campaign" id="484861cb-4ff9-47e6-8f09-7638a954f03e" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.251">
+    <testcase name="Body matches string" time="0.251" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.251" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Get an A/B test email campaign results" id="a55400b4-882a-4a11-9cf6-9b38cac8a094" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.287">
+    <testcase name="Body matches string" time="0.287" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.287" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Get a shared template url" id="5ad6920f-8dda-44f7-b016-d14fb344fc43" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.348">
+    <testcase name="Body matches string" time="0.348" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.348" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Export the recipients of an email campaign" id="0287c745-aef1-4de9-9b4d-2bb43cd890a2" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.273">
+    <testcase name="Body matches string" time="0.273" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.273" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Return all your created email campaigns" id="e040d70a-6c04-426c-8de4-16a491032096" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.316">
+    <testcase name="Body matches string" time="0.316" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.316" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Create an email campaign" id="0163d4eb-63ee-43c1-9afb-0bf2b2907b66" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.280">
+    <testcase name="Body matches string" time="0.280" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.280" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Upload an image to your account's image gallery" id="e645e3fc-1e36-43ee-b511-0969d7b5b7ff" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.257">
+    <testcase name="Body matches string" time="0.257" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.257" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Returns the information for all your created SMS campaigns" id="7d186108-54b5-4424-8ad5-ced20efad705" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.266">
+    <testcase name="Body matches string" time="0.266" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.266" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Creates an SMS campaign" id="f0f14f7f-fe21-4e0a-933d-a867b1711a83" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.250">
+    <testcase name="Body matches string" time="0.250" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.250" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Get an SMS campaign" id="b9c7461e-c941-437b-b824-cbb596e240b1" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.275">
+    <testcase name="Body matches string" time="0.275" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.275" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Update an SMS campaign" id="c5f8e52d-0602-45a1-a6b0-f9d32b424d10" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.248">
+    <testcase name="Body matches string" time="0.248" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.248" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Delete an SMS campaign" id="8b34181e-59c0-43e9-966b-a0c2f3b9627b" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.254">
+    <testcase name="Body matches string" time="0.254" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.254" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Send your SMS campaign immediately" id="63638715-e49a-4a6a-84d9-c655af7c9c92" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.350">
+    <testcase name="Body matches string" time="0.350" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.350" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Update a campaign's status" id="95a346a9-f4b3-413c-b8e3-6f30e5298322" timestamp="2023-08-11T11:52:29.742Z" tests="1" failures="0" errors="0" time="0.257">
+    <testcase name="Body matches string" time="0.257" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Send a test SMS campaign" id="9c788fd4-dd62-4228-bc49-2adb6662e028" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.263">
+    <testcase name="Body matches string" time="0.263" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.263" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Export an SMS campaign's recipients" id="25da0230-7ae0-4c3a-ba8f-79cf98bb7855" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.323">
+    <testcase name="Body matches string" time="0.323" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.323" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Send an SMS campaign's report" id="9a8b000b-f60d-422a-8d6d-c821bca62c72" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.272">
+    <testcase name="Body matches string" time="0.272" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.272" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Messages / Send a message as an agent" id="da284a5c-1dba-4fba-88ec-fe7e80f26c5b" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.324">
+    <testcase name="Body matches string" time="0.324" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.324" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Messages / Get a message" id="343a89bf-4265-4872-9e29-f4ee63781ebf" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.253">
+    <testcase name="Body matches string" time="0.253" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.253" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Messages / Update a message sent by an agent" id="0c292aca-e504-4719-b1e8-aaba96e7af6b" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.324">
+    <testcase name="Body matches string" time="0.324" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.324" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Messages / Delete a message sent by an agent" id="162a948b-32f9-4058-bd6c-94cc32029760" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.255">
+    <testcase name="Body matches string" time="0.255" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.255" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Status / Sets agent’s status to online for 2-3 minutes" id="792a11ba-d793-4d44-8e33-070f07612104" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.324">
+    <testcase name="Body matches string" time="0.324" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.324" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Pushed messages / Send an automated message to a visitor" id="918b8e9f-ad2a-4112-b8c5-8f8a5e1318a2" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.247">
+    <testcase name="Body matches string" time="0.247" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.247" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Pushed messages / Get an automated message" id="eabb8707-b10b-4bed-b105-600eb239d82f" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.243">
+    <testcase name="Body matches string" time="0.243" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.243" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Pushed messages / Update an automated message" id="562276fa-90fc-4d97-8251-1978ea2751d6" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.339">
+    <testcase name="Body matches string" time="0.339" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.339" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Pushed messages / Delete an automated message" id="f3eda226-14af-46a3-bfe9-c180441ecbbc" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.248">
+    <testcase name="Body matches string" time="0.248" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.248" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Get all the contacts" id="42efe37d-123e-4a64-a6cb-00dfbd22ad40" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="1" errors="0" time="0.262">
+    <testcase name="Body matches string" time="0.262" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n' to include 'contacts'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Contacts / Get all the contacts.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'contacts'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'contacts'
+   at Object.eval sandbox-script.js:1:64).]]>
+      </failure>
+    </testcase>
+    <testcase name="application/json" time="0.262" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Create a contact" id="e45486c4-437f-40bc-a512-fd9c316d9e0f" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.240">
+    <testcase name="Body matches string" time="0.240" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.240" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Create Contact via DOI (Double-Opt-In) Flow" id="344a7406-e1d9-4a91-a8ff-058484910ad8" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.245">
+    <testcase name="Body matches string" time="0.245" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.245" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Update multiple contacts" id="167b7550-930b-4330-bcf2-7dbcb0f026e6" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.330">
+    <testcase name="Body matches string" time="0.330" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.330" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Export contacts" id="bb53d3a8-40a5-4602-86c5-c1315916c984" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.253">
+    <testcase name="Body matches string" time="0.253" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.253" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Import contacts" id="2b761001-15e9-4fbf-bb1d-3960690d94eb" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.236">
+    <testcase name="Body matches string" time="0.236" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.236" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Get a contact's details" id="dd94ec02-5ebf-404b-86e6-6c9c75443201" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.325">
+    <testcase name="Body matches string" time="0.325" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.325" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Delete a contact" id="d5badbc7-1e92-4c71-8d97-ff3dc83683e6" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.839">
+    <testcase name="Body matches string" time="0.839" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.839" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Update a contact" id="eb88bee1-4d98-46aa-a6c1-0ccaad8d536e" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.258">
+    <testcase name="Body matches string" time="0.258" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.258" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Get email campaigns' statistics for a contact" id="afe0aedf-07bd-4c4e-987f-bf16c1a2d650" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.317">
+    <testcase name="Body matches string" time="0.317" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.317" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Get all folders" id="44fa9368-957a-4808-b604-0e76f7c4d77a" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="1" errors="0" time="0.301">
+    <testcase name="Body matches string" time="0.301" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n' to include 'folders'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Folders / Get all folders.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'folders'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'folders'
+   at Object.eval sandbox-script.js:1:74).]]>
+      </failure>
+    </testcase>
+    <testcase name="application/json" time="0.301" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Create a folder" id="3b52f906-354d-4193-b1b7-5f7da3eca1be" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="1" errors="0" time="0.318">
+    <testcase name="Body matches string" time="0.318" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n' to include 'id'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Folders / Create a folder.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'id'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'id'
+   at Object.eval sandbox-script.js:1:75).]]>
+      </failure>
+    </testcase>
+    <testcase name="application/json" time="0.318" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Returns a folder's details" id="17967a12-d73c-45d8-99eb-9c11bf4322aa" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.309">
+    <testcase name="Body matches string" time="0.309" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.309" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Update a folder" id="3cbd8390-1483-4fdd-8f15-417b25b78652" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.254">
+    <testcase name="Body matches string" time="0.254" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.254" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Delete a folder (and all its lists)" id="4ba621e8-c2b1-4296-885b-ad678d201a93" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.292">
+    <testcase name="Body matches string" time="0.292" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.292" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Get lists in a folder" id="ef455e7e-e2b8-458c-b369-3a3c95e1d561" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.367">
+    <testcase name="Body matches string" time="0.367" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.367" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Get all the lists" id="a9bb415a-8dfa-4c79-a32d-7badb401ed03" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.281">
+    <testcase name="confirm response body is null" time="0.281" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.281" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Create a list" id="57c3317b-83d3-4b5b-83cd-8c471f89fcd3" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.343">
+    <testcase name="confirm Body contains code" time="0.343" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.343" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Get contacts in a list" id="f965f506-6e61-42d0-8663-15fc05ebb6f7" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="1" errors="0" time="0.339">
+    <testcase name="Body matches string" time="0.339" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n' to include 'id'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Lists / Get contacts in a list.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'id'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'id'
+   at Object.eval sandbox-script.js:1:82).]]>
+      </failure>
+    </testcase>
+    <testcase name="application/json" time="0.339" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Add existing contacts to a list" id="44643c0d-1706-4c14-91f3-028756558bde" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.333">
+    <testcase name="confirm body contains string" time="0.333" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.333" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Delete a contact from a list" id="d689b2a2-1ed4-4058-81a4-db84bb5921d5" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.341">
+    <testcase name="confirm body contains string" time="0.341" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.341" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Get a list's details" id="63ce95ac-c52e-4521-8cfe-90d2e8ac16c4" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.328">
+    <testcase name="confirm body contains string" time="0.328" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.328" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Update a list" id="f3e13d18-1b00-4139-9747-bab93280d98d" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.241">
+    <testcase name="confirm body contains string" time="0.241" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.241" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Delete a list" id="4bd1200d-fe91-4a82-af55-e0f7c00ed18b" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.418">
+    <testcase name="confirm body contains string" time="0.418" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.418" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Attributes / List all attributes" id="2234b39c-edbc-434e-a10a-616fe20daf62" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.347">
+    <testcase name="confirm body contains string" time="0.347" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.347" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Attributes / Update contact attribute" id="38d001d9-74a7-4a13-af9a-c1c8e0d08008" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.355">
+    <testcase name="confirm body contains string" time="0.355" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.355" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Attributes / Create contact attribute" id="4a340ab9-53c6-491d-b982-c800f4abcfec" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.261">
+    <testcase name="confirm body contains string" time="0.261" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.261" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Attributes / Delete an attribute" id="1802e178-6f27-42b7-9364-d9a8caabc022" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.292">
+    <testcase name="confirm body contains string" time="0.292" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.292" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Email API / Send a transactional email" id="71f3ccab-ff9d-4629-9b2a-7a3e3b1ceedd" timestamp="2023-08-11T11:52:29.742Z" tests="4" failures="2" errors="0" time="0.301">
+    <testcase name="Successful POST" time="0.301" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status code 201 but got 401">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Email API / Send a transactional email.]]>
+        <![CDATA[Test description: Successful POST.]]>
+        <![CDATA[Error message: expected response to have status code 201 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 201 but got 401
+   at Object.eval sandbox-script.js:1:92).]]>
+      </failure>
+    </testcase>
+    <testcase name="Body matches string" time="0.301" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n' to include 'messageId'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Email API / Send a transactional email.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'messageId'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'messageId'
+   at Object.eval sandbox-script.js:2:92).]]>
+      </failure>
+    </testcase>
+    <testcase name="json value check" time="0.301" classname="Sendinblue"/>
+    <testcase name="Response time is less than 200ms" time="0.301" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Email API / Get the list of transactional emails on the basis of allowed filters" id="2200c3db-ed0d-407f-9452-dd141959bbbe" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.281">
+    <testcase name="confirm body contains string" time="0.281" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.281" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Email API / Delete scheduled emails by batchId or messageId" id="27fbc9fd-e677-423d-b0b9-aa7537b4e9b9" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.295">
+    <testcase name="confirm body contains string" time="0.295" classname="Sendinblue"/>
+    <testcase name="application/json" time="0.295" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Email API / Get the personalized content of a sent transactional email" id="32494229-6057-4e4c-b4eb-9a51600ac4c5" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.303">
+    <testcase name="Body matches string" time="0.303" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.303" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Email API / Fetch scheduled emails by batchId or messageId" id="d04e48a4-6b4d-49dc-8274-94c952b430d8" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.303">
+    <testcase name="Body matches string" time="0.303" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.303" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Get the list of email templates" id="0926d247-4e16-490d-bfdf-08d263108a33" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="1" time="0.304">
+    <system-err><![CDATA[Iteration: 0
+
+---
+testScriptError: Invalid regular expression: missing /
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Create an email template" id="43e921fe-0ff6-490b-8a6b-1a7607cb27c0" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.313">
+    <testcase name="Body matches string" time="0.313" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.313" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Returns the template information" id="0a48daca-5bdc-4d59-9f48-21200ac301e8" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.321">
+    <testcase name="Body matches string" time="0.321" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.321" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Update an email template" id="e75c4ef8-3e5c-4ab7-9b15-cc7c895cfc09" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.298">
+    <testcase name="Body matches string" time="0.298" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.298" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Delete an inactive email template" id="95c37239-839c-4f94-a2cf-0e20bc115eb6" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.317">
+    <testcase name="Body matches string" time="0.317" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.317" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Send a template to your test list" id="9937fdc7-9f90-4843-88d9-d85617904dfe" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.309">
+    <testcase name="Body matches string" time="0.309" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.309" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Statistics / Get your transactional email activity aggregated over a period of time" id="c0559f4a-c048-43e2-a206-410d8aa577fa" timestamp="2023-08-11T11:52:29.742Z" tests="4" failures="1" errors="0" time="0.304">
+    <testcase name="Body matches string" time="0.304" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.304" classname="Sendinblue"/>
+    <testcase name="Body is correct" time="0.304" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response body to equal 'string' but got '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Statistics / Get your transactional email activity aggregated over a period of time.]]>
+        <![CDATA[Test description: Body is correct.]]>
+        <![CDATA[Error message: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'
+   at Object.eval sandbox-script.js:3:103).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is not less than 200ms" time="0.304" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Statistics / Get your transactional email activity aggregated per day" id="d851ffeb-5028-4a5a-b573-9bf3a1b15cf8" timestamp="2023-08-11T11:52:29.742Z" tests="4" failures="1" errors="0" time="0.275">
+    <testcase name="Body matches string" time="0.275" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.275" classname="Sendinblue"/>
+    <testcase name="Body is correct" time="0.275" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response body to equal 'string' but got '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Statistics / Get your transactional email activity aggregated per day.]]>
+        <![CDATA[Test description: Body is correct.]]>
+        <![CDATA[Error message: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'
+   at Object.eval sandbox-script.js:3:104).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is not less than 200ms" time="0.275" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Statistics / Get all your transactional email activity (unaggregated events)" id="1cf65385-ca2f-4f93-a1cc-e90ba0b827e4" timestamp="2023-08-11T11:52:29.742Z" tests="4" failures="1" errors="0" time="0.304">
+    <testcase name="Body matches string" time="0.304" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.304" classname="Sendinblue"/>
+    <testcase name="Body is correct" time="0.304" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response body to equal 'string' but got '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Statistics / Get all your transactional email activity (unaggregated events).]]>
+        <![CDATA[Test description: Body is correct.]]>
+        <![CDATA[Error message: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'
+   at Object.eval sandbox-script.js:3:105).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is not less than 200ms" time="0.304" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Blocked Contacts / Get the list of blocked or unsubscribed transactional contacts" id="968ca221-dd2c-4df2-8777-7bf64c859c43" timestamp="2023-08-11T11:52:29.742Z" tests="4" failures="1" errors="0" time="0.291">
+    <testcase name="Body matches string" time="0.291" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.291" classname="Sendinblue"/>
+    <testcase name="Body is correct" time="0.291" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response body to equal 'string' but got '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Blocked Contacts / Get the list of blocked or unsubscribed transactional contacts.]]>
+        <![CDATA[Test description: Body is correct.]]>
+        <![CDATA[Error message: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'
+   at Object.eval sandbox-script.js:3:106).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is not less than 200ms" time="0.291" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Blocked Contacts / Unblock or resubscribe a transactional contact" id="efc6ce0f-6abb-4ecc-9d91-531334be3546" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.299"/>
+  <testsuite name="Transactional / Blocked Domains / Get the list of blocked domains" id="c3ebab74-d6a1-4c69-83a6-3713e4545a7a" timestamp="2023-08-11T11:52:29.742Z" tests="4" failures="2" errors="0" time="0.327">
+    <testcase name="Body matches string" time="0.327" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n' to include 'domains'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Blocked Domains / Get the list of blocked domains.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'domains'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'domains'
+   at Object.eval sandbox-script.js:1:108).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.327" classname="Sendinblue"/>
+    <testcase name="Body is correct" time="0.327" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response body to equal 'example.com' but got '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Blocked Domains / Get the list of blocked domains.]]>
+        <![CDATA[Test description: Body is correct.]]>
+        <![CDATA[Error message: expected response body to equal 'example.com' but got '{"message":"Key not found","code":"unauthorized"}\n'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response body to equal 'example.com' but got '{"message":"Key not found","code":"unauthorized"}\n'
+   at Object.eval sandbox-script.js:3:108).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is not less than 200ms" time="0.327" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Blocked Domains / Add a new domain to the list of blocked domains" id="58186a87-b5c8-41de-b3cd-88387821458b" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.242"/>
+  <testsuite name="Transactional / Blocked Domains / Unblock an existing domain from the list of blocked domains" id="d1d1fba0-e597-4d7a-afd5-200eaf09d5f7" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.314"/>
+  <testsuite name="Transactional / Logs / Delete hardbounces" id="ede00970-0c27-4cb2-91de-349b2c11fabc" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.314"/>
+  <testsuite name="Transactional / Logs / Delete an SMTP transactional log" id="168948b6-db5c-415c-a770-944c4bc27625" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.328"/>
+  <testsuite name="Transactional / Inbound Email Parsing / Get the list of all the events for the received emails." id="d31ffe94-7c47-426c-9740-ca342fcb5842" timestamp="2023-08-11T11:52:29.742Z" tests="4" failures="1" errors="0" time="0.315">
+    <testcase name="Body matches string" time="0.315" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.315" classname="Sendinblue"/>
+    <testcase name="Body is correct" time="0.315" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response body to equal 'string' but got '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Inbound Email Parsing / Get the list of all the events for the received emails..]]>
+        <![CDATA[Test description: Body is correct.]]>
+        <![CDATA[Error message: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'
+   at Object.eval sandbox-script.js:3:113).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is not less than 200ms" time="0.315" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Inbound Email Parsing / Fetch all events history for one particular received email." id="707073e8-0db5-4391-8bbc-836c4ace358e" timestamp="2023-08-11T11:52:29.742Z" tests="4" failures="1" errors="0" time="0.291">
+    <testcase name="Body matches string" time="0.291" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.291" classname="Sendinblue"/>
+    <testcase name="Body is correct" time="0.291" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response body to equal 'string' but got '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Inbound Email Parsing / Fetch all events history for one particular received email..]]>
+        <![CDATA[Test description: Body is correct.]]>
+        <![CDATA[Error message: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'
+   at Object.eval sandbox-script.js:3:114).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is not less than 200ms" time="0.291" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Inbound Email Parsing / Retrieve inbound attachment with download token." id="7ab2e718-cfbd-4f6e-885d-00d765e1137d" timestamp="2023-08-11T11:52:29.742Z" tests="4" failures="1" errors="0" time="0.284">
+    <testcase name="Body matches string" time="0.284" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.284" classname="Sendinblue"/>
+    <testcase name="Body is correct" time="0.284" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response body to equal 'string' but got '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Inbound Email Parsing / Retrieve inbound attachment with download token..]]>
+        <![CDATA[Test description: Body is correct.]]>
+        <![CDATA[Error message: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'
+   at Object.eval sandbox-script.js:3:115).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is not less than 200ms" time="0.284" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Transactional SMS / Send SMS message to a mobile number" id="32c54646-d622-4c8b-86b5-f0ade1cd2769" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.291"/>
+  <testsuite name="Transactional / SMS statistics / Get your SMS activity aggregated over a period of time" id="56ef5819-5aa8-494c-acff-4c8d9d326fb4" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.330"/>
+  <testsuite name="Transactional / SMS statistics / Get your SMS activity aggregated per day" id="a18f5da9-e309-4d26-9026-e7313b3a8c7b" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.290"/>
+  <testsuite name="Transactional / SMS statistics / Get all your SMS activity (unaggregated events)" id="89de6eda-9a1e-46ce-9bf5-f316f74b1360" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.252"/>
+  <testsuite name="Account / Webhooks / Get all webhooks" id="e7638f2f-b9ec-4e5d-849c-d22f9383a18d" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.252">
+    <testcase name="Body matches string" time="0.252" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.252" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Webhooks / Create a webhook" id="56c64ad7-da29-46fc-a59f-17a543c07509" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.248">
+    <testcase name="Body matches string" time="0.248" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.248" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Webhooks / Get a webhook details" id="97efd5f8-821f-449e-9f76-b772cdfdef02" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.305">
+    <testcase name="Body matches string" time="0.305" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.305" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Webhooks / Update a webhook" id="4b6df165-bfc7-4f50-bec5-61555b8586b3" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.297">
+    <testcase name="Body matches string" time="0.297" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.297" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Webhooks / Delete a webhook" id="2afa79d4-6d3c-4d61-a417-e5dc61c9261d" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.298">
+    <testcase name="Body matches string" time="0.298" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.298" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Credits / Add Email and/or SMS credits to a specific child account" id="fdb2d056-2d0b-44c3-844c-ddf745211c73" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.330">
+    <testcase name="Body matches string" time="0.330" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.330" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Credits / Remove Email and/or SMS credits from a specific child account" id="b784916c-f27b-46f8-a2bb-b2fa6d0b29d5" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.266">
+    <testcase name="Body matches string" time="0.266" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.266" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / IP management / Associate a dedicated IP to the child" id="42cc26e9-ce79-4e1b-bc83-5dd06f209cf0" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.324"/>
+  <testsuite name="Account / Reseller / IP management / Dissociate a dedicated IP to the child" id="a95176e7-c609-43e2-a36e-a93af952d5c1" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.300"/>
+  <testsuite name="Account / Reseller / Domains / Get all sender domains for a specific child account" id="0519459a-e4ed-4402-9454-d5864617fb57" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.324">
+    <testcase name="Body matches string" time="0.324" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.324" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Domains / Create a domain for a child account" id="98fd893d-2295-465b-b030-13580b34b41a" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.301">
+    <testcase name="Body matches string" time="0.301" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.301" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Domains / Update the sender domain of reseller's child based on the childIdentifier and domainName passed" id="9d2166bc-3606-435f-9eb7-eda3469485af" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="0" errors="0" time="0.294">
+    <testcase name="Body matches string" time="0.294" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.294" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Domains / Delete the sender domain of the reseller child based on the childIdentifier and domainName passed" id="06cc5ea4-bceb-4b9e-b825-ce4d15717adb" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.301"/>
+  <testsuite name="Account / Reseller / Child accounts / Get a child account's details" id="92f26a31-67b0-4c3a-a780-6d5003708adb" timestamp="2023-08-11T11:52:29.742Z" tests="4" failures="2" errors="0" time="0.316">
+    <testcase name="Body matches string" time="0.316" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Reseller / Child accounts / Get a child account's details.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'
+   at Object.eval sandbox-script.js:1:133).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.316" classname="Sendinblue"/>
+    <testcase name="Body is correct" time="0.316" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response body to equal 'string' but got '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Reseller / Child accounts / Get a child account's details.]]>
+        <![CDATA[Test description: Body is correct.]]>
+        <![CDATA[Error message: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'
+   at Object.eval sandbox-script.js:3:133).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is not less than 200ms" time="0.316" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Update info of reseller's child based on the child identifier supplied" id="71daf749-3d4e-453a-a0f4-a0327328521c" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.302"/>
+  <testsuite name="Account / Reseller / Child accounts / Delete a single reseller child based on the child identifier supplied" id="ccc07ddd-d1d2-4a36-aa10-6f5f1a266e01" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.321"/>
+  <testsuite name="Account / Reseller / Child accounts / Update info of reseller's child account status based on the identifier supplied" id="f18a180e-cce8-4578-91a4-80cae658a436" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.344"/>
+  <testsuite name="Account / Reseller / Child accounts / Get the status of a reseller's child account creation, whether it is successfully created (exists) or not based on the childIdentifier supplied" id="38919347-1578-4ab8-9546-50bd1c2f0cf8" timestamp="2023-08-11T11:52:29.742Z" tests="4" failures="2" errors="0" time="0.416">
+    <testcase name="Body matches string" time="0.416" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Reseller / Child accounts / Get the status of a reseller's child account creation, whether it is successfully created (exists) or not based on the childIdentifier supplied.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'
+   at Object.eval sandbox-script.js:1:137).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.416" classname="Sendinblue"/>
+    <testcase name="Body is correct" time="0.416" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response body to equal 'string' but got '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Reseller / Child accounts / Get the status of a reseller's child account creation, whether it is successfully created (exists) or not based on the childIdentifier supplied.]]>
+        <![CDATA[Test description: Body is correct.]]>
+        <![CDATA[Error message: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'
+   at Object.eval sandbox-script.js:3:137).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is not less than 200ms" time="0.416" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Get session token to access Sendinblue (SSO)" id="0e9fbe53-8aff-4bd2-a206-751cf514f11c" timestamp="2023-08-11T11:52:29.742Z" tests="4" failures="2" errors="0" time="0.367">
+    <testcase name="Body matches string" time="0.367" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Reseller / Child accounts / Get session token to access Sendinblue (SSO).]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'
+   at Object.eval sandbox-script.js:1:138).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.367" classname="Sendinblue"/>
+    <testcase name="Body is correct" time="0.367" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response body to equal 'string' but got '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Reseller / Child accounts / Get session token to access Sendinblue (SSO).]]>
+        <![CDATA[Test description: Body is correct.]]>
+        <![CDATA[Error message: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'
+   at Object.eval sandbox-script.js:3:138).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is not less than 200ms" time="0.367" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Get the list of all children accounts" id="0ab3f3a0-ff08-47a7-9150-c98b1d7643a1" timestamp="2023-08-11T11:52:29.742Z" tests="4" failures="2" errors="0" time="0.291">
+    <testcase name="Body matches string" time="0.291" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Reseller / Child accounts / Get the list of all children accounts.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'
+   at Object.eval sandbox-script.js:1:139).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.291" classname="Sendinblue"/>
+    <testcase name="Body is correct" time="0.291" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response body to equal 'string' but got '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Reseller / Child accounts / Get the list of all children accounts.]]>
+        <![CDATA[Test description: Body is correct.]]>
+        <![CDATA[Error message: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'
+   at Object.eval sandbox-script.js:3:139).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is not less than 200ms" time="0.291" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Creates a reseller child" id="a366991e-5394-4fbe-9146-6fbbafc99206" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.307"/>
+  <testsuite name="Account / Process / Return all the processes for your account" id="e301b80d-9b16-4346-89af-4d0af2aec94d" timestamp="2023-08-11T11:52:29.742Z" tests="4" failures="2" errors="0" time="0.338">
+    <testcase name="Body matches string" time="0.338" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Process / Return all the processes for your account.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'
+   at Object.eval sandbox-script.js:1:141).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.338" classname="Sendinblue"/>
+    <testcase name="Body is correct" time="0.338" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response body to equal 'string' but got '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Process / Return all the processes for your account.]]>
+        <![CDATA[Test description: Body is correct.]]>
+        <![CDATA[Error message: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'
+   at Object.eval sandbox-script.js:3:141).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is not less than 200ms" time="0.338" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Process / Return the informations for a process" id="d3a3cb2c-0075-4f65-8bd6-88271cd876ac" timestamp="2023-08-11T11:52:29.742Z" tests="4" failures="2" errors="0" time="0.284">
+    <testcase name="Body matches string" time="0.284" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Process / Return the informations for a process.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'
+   at Object.eval sandbox-script.js:1:142).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.284" classname="Sendinblue"/>
+    <testcase name="Body is correct" time="0.284" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response body to equal 'string' but got '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Process / Return the informations for a process.]]>
+        <![CDATA[Test description: Body is correct.]]>
+        <![CDATA[Error message: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'
+   at Object.eval sandbox-script.js:3:142).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is not less than 200ms" time="0.284" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Corporate / Get the details of requested master account" id="71caf33a-5aa1-4e23-a962-3a01c4b06852" timestamp="2023-08-11T11:52:29.742Z" tests="4" failures="2" errors="0" time="0.291">
+    <testcase name="Body matches string" time="0.291" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Corporate / Get the details of requested master account.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'
+   at Object.eval sandbox-script.js:1:143).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.291" classname="Sendinblue"/>
+    <testcase name="Body is correct" time="0.291" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response body to equal 'string' but got '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Corporate / Get the details of requested master account.]]>
+        <![CDATA[Test description: Body is correct.]]>
+        <![CDATA[Error message: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'
+   at Object.eval sandbox-script.js:3:143).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is not less than 200ms" time="0.291" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Corporate / Get the list of all the sub-accounts of the master account." id="e870b881-73ef-4206-9636-ea8725acfe53" timestamp="2023-08-11T11:52:29.742Z" tests="4" failures="2" errors="0" time="0.300">
+    <testcase name="Body matches string" time="0.300" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Corporate / Get the list of all the sub-accounts of the master account..]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'
+   at Object.eval sandbox-script.js:1:144).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.300" classname="Sendinblue"/>
+    <testcase name="Body is correct" time="0.300" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response body to equal 'string' but got '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Corporate / Get the list of all the sub-accounts of the master account..]]>
+        <![CDATA[Test description: Body is correct.]]>
+        <![CDATA[Error message: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'
+   at Object.eval sandbox-script.js:3:144).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is not less than 200ms" time="0.300" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Corporate / Create a new sub-account under a master account." id="c43d1dd4-ed24-42bf-a558-db4a78ce21ba" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.292"/>
+  <testsuite name="Account / Corporate / Generate SSO token to access Sendinblue" id="25673fdc-8e89-4177-8afb-e07d7aa27727" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.311"/>
+  <testsuite name="Account / Corporate / Get sub-account details" id="dd90b415-a088-42c1-b772-2c5b97eb28e4" timestamp="2023-08-11T11:52:29.742Z" tests="4" failures="2" errors="0" time="0.340">
+    <testcase name="Body matches string" time="0.340" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Corporate / Get sub-account details.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'get mongodb crm database: Crm db is not created yet. Please enable crm'
+   at Object.eval sandbox-script.js:1:147).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.340" classname="Sendinblue"/>
+    <testcase name="Body is correct" time="0.340" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response body to equal 'string' but got '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Corporate / Get sub-account details.]]>
+        <![CDATA[Test description: Body is correct.]]>
+        <![CDATA[Error message: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'
+   at Object.eval sandbox-script.js:3:147).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is not less than 200ms" time="0.340" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Corporate / Delete a sub-account" id="cce18781-0bf5-4b94-954f-9b8cb7ff074c" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.263"/>
+  <testsuite name="Account / Corporate / Update sub-account plan" id="ab59bc2e-f82a-4302-9c8b-91bf169d3ae2" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.352"/>
+  <testsuite name="Account / Account data / Get your account information, plan and credits details" id="ca85cdd8-769e-43f0-b816-dc9afbb86c63" timestamp="2023-08-11T11:52:29.742Z" tests="4" failures="1" errors="0" time="0.312">
+    <testcase name="Body matches string" time="0.312" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.312" classname="Sendinblue"/>
+    <testcase name="Body is not correct" time="0.312" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response body to equal 'string' but got '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Account data / Get your account information, plan and credits details.]]>
+        <![CDATA[Test description: Body is not correct.]]>
+        <![CDATA[Error message: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'
+   at Object.eval sandbox-script.js:3:150).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is not less than 200ms" time="0.312" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Senders / Get the list of all your senders" id="e55bcae2-915a-40d8-8cf3-a5e155ed9328" timestamp="2023-08-11T11:52:29.742Z" tests="2" failures="2" errors="1" time="0.304">
+    <system-err><![CDATA[Iteration: 0
+
+---
+testScriptError: Cannot read properties of undefined (reading '3')
+---
+]]></system-err>
+    <testcase name="Status code is 200" time="0.304" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status code 200 but got 401">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Senders / Get the list of all your senders.]]>
+        <![CDATA[Test description: Status code is 200.]]>
+        <![CDATA[Error message: expected response to have status code 200 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 200 but got 401
+   at Object.eval sandbox-script.js:1:151).]]>
+      </failure>
+    </testcase>
+    <testcase name="Body matches string" time="0.304" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n' to include 'Classy'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Senders / Get the list of all your senders.]]>
+        <![CDATA[Test description: Body matches string.]]>
+        <![CDATA[Error message: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'Classy'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"message":"Key not found","code":"unauthorized"}\n' to include 'Classy'
+   at Object.eval sandbox-script.js:2:151).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Account / Senders / Create a new sender" id="a261b952-72de-4046-9ef3-d0cf2ed79201" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.260"/>
+  <testsuite name="Account / Senders / Get all the dedicated IPs for your account" id="a8c9642e-98c6-4000-b09a-45e93e478f73" timestamp="2023-08-11T11:52:29.742Z" tests="4" failures="1" errors="0" time="0.333">
+    <testcase name="Body matches string" time="0.333" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.333" classname="Sendinblue"/>
+    <testcase name="Body is correct" time="0.333" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response body to equal 'string' but got '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Senders / Get all the dedicated IPs for your account.]]>
+        <![CDATA[Test description: Body is correct.]]>
+        <![CDATA[Error message: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'
+   at Object.eval sandbox-script.js:3:153).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is not less than 200ms" time="0.333" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Senders / Update a sender" id="7ee05ed5-c505-4851-ac6e-2cf0ea3e4b01" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.263"/>
+  <testsuite name="Account / Senders / Delete a sender" id="67cde645-c18b-4dda-8e55-23282804d10b" timestamp="2023-08-11T11:52:29.742Z" tests="0" failures="0" errors="0" time="0.378"/>
+  <testsuite name="Account / Senders / Get all the dedicated IPs for a sender" id="d13b99c5-6311-4586-b94d-b8cd8bba4a4d" timestamp="2023-08-11T11:52:29.742Z" tests="4" failures="1" errors="0" time="0.304">
+    <testcase name="Body matches string" time="0.304" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.304" classname="Sendinblue"/>
+    <testcase name="Body is not correct" time="0.304" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response body to equal 'string' but got '{&quot;message&quot;:&quot;Key not found&quot;,&quot;code&quot;:&quot;unauthorized&quot;}\n'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: a48d69d7-4bd8-4462-b35a-d86c7f6c2d4f.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Senders / Get all the dedicated IPs for a sender.]]>
+        <![CDATA[Test description: Body is not correct.]]>
+        <![CDATA[Error message: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response body to equal 'string' but got '{"message":"Key not found","code":"unauthorized"}\n'
+   at Object.eval sandbox-script.js:3:156).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is not less than 200ms" time="0.304" classname="Sendinblue"/>
+  </testsuite>
+</testsuites>
