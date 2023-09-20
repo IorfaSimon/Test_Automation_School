@@ -16,6 +16,6 @@ public class FacebookTest {
 
         //open url
         driver.get("https://web.facebook.com/");
-        System.out.println(driver.getTitle());
+
     }
 }

@@ -9,8 +9,6 @@ public class DailyPost {
         //launch browser
         WebDriver driver = new EdgeDriver();
 
-        //maximize browser
-        driver.manage().window().maximize();
 
         //maximaze the browser
         driver.manage().window().maximize();;
