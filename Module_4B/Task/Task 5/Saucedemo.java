@@ -14,33 +14,33 @@ public class Saucedemo {
         //navigate url
         driver.get("https://www.saucedemo.com/");
         //input username
-        driver.findElement(By.xpath("//*[@id=\"user-name\"]")).sendKeys("performance_glitch_user");
+        driver.findElement(By.xpath("//input[@id=\"user-name\"]")).sendKeys("performance_glitch_user");
         Thread.sleep(500);
         //input password
-        driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("secret_sauce");
+        driver.findElement(By.xpath("//input[@id=\"password\"]")).sendKeys("secret_sauce");
         Thread.sleep(500);
         //click login button
-        driver.findElement(By.xpath("//*[@id=\"login-button\"]")).click();
+        driver.findElement(By.xpath("//input[@id=\"login-button\"]")).click();
         Thread.sleep(500);
         //add to cart
-        driver.findElement(By.xpath("//*[@id=\"add-to-cart-sauce-labs-backpack\"]")).click();
+        driver.findElement(By.xpath("//button[@id=\"add-to-cart-sauce-labs-backpack\"]")).click();
         Thread.sleep(500);
         //clich cart container
         driver.findElement(By.xpath("//*[@id=\"shopping_cart_container\"]/a/span")).click();
         //checkout
-        driver.findElement(By.xpath("//*[@id=\"checkout\"]")).click();
+        driver.findElement(By.xpath("//button[@id=\"checkout\"]")).click();
         //input first name
-        driver.findElement(By.xpath("//*[@id=\"first-name\"]")).sendKeys("Simon");
+        driver.findElement(By.xpath("//input[@id=\"first-name\"]")).sendKeys("Simon");
         Thread.sleep(500);
         //input last name
-        driver.findElement(By.xpath("//*[@id=\"last-name\"]")).sendKeys("Iorfa");
+        driver.findElement(By.xpath("//input[@id=\"last-name\"]")).sendKeys("Iorfa");
         //postal code
-        driver.findElement(By.xpath("//*[@id=\"postal-code\"]")).sendKeys("234");
+        driver.findElement(By.xpath("//input[@id=\"postal-code\"]")).sendKeys("234");
         Thread.sleep(500);
         //continue
-        driver.findElement(By.xpath("//*[@id=\"continue\"]")).click();
+        driver.findElement(By.xpath("//input[@id=\"continue\"]")).click();
         // click finish
-        driver.findElement(By.xpath("//*[@id=\"finish\"]")).click();
+        driver.findElement(By.xpath("//button[@id=\"finish\"]")).click();
 
 
 
