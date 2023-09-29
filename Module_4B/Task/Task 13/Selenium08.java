@@ -7,8 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-import java.awt.*;
-
 public class Selenium08 {
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver","C:\\Users\\Mr. Simoen\\Desktop\\SeleniumWebTest\\SeleleniumWebTest\\src\\chromedriver.exe");
@@ -25,18 +23,17 @@ public class Selenium08 {
         WebElement Menu = driver.findElement(By.xpath("//body/div[1]/div[2]/div[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/article[1]/div[1]/div[1]/div[3]/div[1]/div[1]/select[1]"));
         Select select = new Select(Menu);
         select.selectByIndex(159);
-        Thread.sleep(500);
+        Thread.sleep(5000);
 
         JavascriptExecutor scroll = (JavascriptExecutor) driver;
         scroll.executeAsyncScript("window.scrollBy(0, 500)");
 
         driver.findElement(By.xpath("//body/div[1]/div[2]/div[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/article[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[3]/select[1]"));
-//        WebElement Menu1 = driver.findElement(By.xpath("//option[contains(text(),'January')]"));
-//        Select select1 = new Select(Menu1);
-        select.selectByIndex(5);
-//        select1.selectByVisibleText("Feb");
-//        select1.selectByVisibleText("Mar");
-
+        WebElement Month = (WebElement) driver.findElements(By.xpath("//option[contains(text(),'January')],//option[contains(text(),'February')], //option[contains(text(),'March')]"));
+        Select select1 = new Select(Month);
+        select1.selectByIndex(0);
+        select1.selectByVisibleText("February");
+        select1.selectByValue("Mar");
 
 
     }
